@@ -19,5 +19,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
      nad_m21-userdebug \
-     nad_21-eng \
+     nad_m21-eng \
      nad_m21-user \
