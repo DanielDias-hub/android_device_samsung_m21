@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_m21.mk
+    $(LOCAL_DIR)/ancient_m21.mk
 
 COMMON_LUNCH_CHOICES := \
      ancient_m21-userdebug \
