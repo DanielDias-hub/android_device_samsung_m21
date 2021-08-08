@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/m21/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Freaky stuff.
+$(call inherit-product, vendor/freaky/config/common_full_phone.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -33,15 +33,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m21
-PRODUCT_NAME := lineage_m21
+PRODUCT_NAME := freaky_m21
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M215F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/m21nsxx/m21:11/QP1A.190711.020/M215FXXU2ATJ5:user/release-keys
+BUILD_FINGERPRINT := samsung/m21nsxx/m21:10/QP1A.190711.020/M215FXXU2ATJ5:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=m21nsxx \
-        PRIVATE_BUILD_DESC="m21nsxx-user 11 QP1A.190711.020 M215FXXU2ATJ5 release-keys"
+        PRIVATE_BUILD_DESC="m21nsxx-user 10 QP1A.190711.020 M215FXXU2ATJ5 release-keys"
